@@ -14,7 +14,8 @@
         "NODE_ENV": "production",
         "PORT": 3333,
         "DATABASE_URL": "local.db",
-        "AUTH_SECRET": "your-secret-key-min-32-characters-here"
+        "AUTH_SECRET": "your-secret-key-min-32-characters-here",
+        "DEV_AUTO_LOGIN": "true"
       }
     }
   ]

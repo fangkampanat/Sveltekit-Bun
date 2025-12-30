@@ -1,34 +1,34 @@
 /* ===================================
-   PREMIUM DARK THEME - SvelteKit Bun
+   BLACK ELECTRIC LIME - SvelteKit Bun
    =================================== */
 
 /* Custom Theme Variables */
 :root {
-	/* Premium Colors */
-	--accent-primary: #6366f1;
-	--accent-secondary: #8b5cf6;
-	--accent-tertiary: #a78bfa;
-	--gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
-	--gradient-surface: linear-gradient(180deg, rgba(30, 32, 44, 0.8) 0%, rgba(17, 19, 27, 0.95) 100%);
-	--gradient-glow: radial-gradient(ellipse at top, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+	/* Electric Lime Colors */
+	--accent-primary: #c8ff00;
+	--accent-secondary: #a3e635;
+	--accent-tertiary: #bef264;
+	--gradient-primary: linear-gradient(135deg, #c8ff00 0%, #a3e635 50%, #84cc16 100%);
+	--gradient-surface: linear-gradient(180deg, rgba(15, 15, 15, 0.95) 0%, rgba(5, 5, 5, 0.98) 100%);
+	--gradient-glow: radial-gradient(ellipse at top, rgba(200, 255, 0, 0.12) 0%, transparent 50%);
 
-	/* Enhanced Surface Colors */
-	--surface-base: #0d0f14;
-	--surface-elevated: #13151c;
-	--surface-overlay: #1a1d26;
-	--surface-glass: rgba(26, 29, 38, 0.7);
+	/* Deep Black Surface Colors */
+	--surface-base: #050505;
+	--surface-elevated: #0a0a0a;
+	--surface-overlay: #111111;
+	--surface-glass: rgba(15, 15, 15, 0.85);
 
 	/* Border & Shadow */
-	--border-subtle: rgba(255, 255, 255, 0.06);
-	--border-accent: rgba(99, 102, 241, 0.3);
-	--shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.4);
-	--shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
-	--shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+	--border-subtle: rgba(255, 255, 255, 0.05);
+	--border-accent: rgba(200, 255, 0, 0.35);
+	--shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.6);
+	--shadow-glow: 0 0 40px rgba(200, 255, 0, 0.12);
+	--shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.04);
 
 	/* Text */
-	--text-primary: #f1f5f9;
-	--text-secondary: #94a3b8;
-	--text-muted: #64748b;
+	--text-primary: #fafafa;
+	--text-secondary: #a1a1aa;
+	--text-muted: #71717a;
 }
 
 /* Google Sans Font */
@@ -140,11 +140,14 @@ body::before {
 .btn-primary {
 	background: var(--gradient-primary);
 	border: none;
-	box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+	color: #0a0a0a;
+	font-weight: 600;
+	box-shadow: 0 4px 16px rgba(200, 255, 0, 0.25);
 }
 
 .btn-primary:hover {
-	box-shadow: 0 6px 24px rgba(99, 102, 241, 0.4);
+	box-shadow: 0 6px 24px rgba(200, 255, 0, 0.35);
+	color: #050505;
 }
 
 .btn-outline-secondary {
@@ -185,7 +188,7 @@ body::before {
 .form-control:focus {
 	background: var(--surface-overlay);
 	border-color: var(--accent-primary);
-	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+	box-shadow: 0 0 0 3px rgba(200, 255, 0, 0.12);
 	color: var(--text-primary);
 }
 
@@ -377,8 +380,8 @@ dialog .dialog-actions {
 }
 
 ::selection {
-	background: rgba(99, 102, 241, 0.3);
-	color: var(--text-primary);
+	background: rgba(200, 255, 0, 0.25);
+	color: #050505;
 }
 
 /* Focus visible for accessibility */
@@ -398,7 +401,7 @@ dialog .dialog-actions {
 
 /* Animated gradient background */
 .animated-gradient {
-	background: linear-gradient(-45deg, #6366f1, #8b5cf6, #a78bfa, #818cf8);
+	background: linear-gradient(-45deg, #c8ff00, #a3e635, #bef264, #84cc16);
 	background-size: 400% 400%;
 	animation: gradientShift 8s ease infinite;
 }
